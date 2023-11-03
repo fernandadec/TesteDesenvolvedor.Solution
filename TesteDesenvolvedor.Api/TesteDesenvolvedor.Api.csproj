@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>2f433d3d-f035-47ee-97eb-6cd26dbd1822</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TesteDesenvolvedor.Domain\TesteDesenvolvedor.Services.csproj" />
+    <ProjectReference Include="..\TesteDesenvolvedor.Entities\TesteDesenvolvedor.Domain.csproj" />
+    <ProjectReference Include="..\TesteDesenvolvedor.Infra\TesteDesenvolvedor.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
